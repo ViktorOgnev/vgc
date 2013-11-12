@@ -1,0 +1,18 @@
+Django==1.6
+PIL==1.1.7
+akismet==0.2.0
+argparse==1.2.1
+beautifulsoup4==4.3.2
+-e hg+http://bitbucket.org/izi/django-admin-tools/@b23413b4ca2dc4900ef220bd488ba38834825e56#egg=django_admin_tools-dev
+django-debug-toolbar==0.11.0
+-e git://github.com/smacker/django-filebrowser-no-grappelli-django14.git@16c976bb3aca18d7986f306d8761833a23875883#egg=django_filebrowser-dev
+django-grappelli==2.4.7
+django-haystack==2.1.0
+django-htmlmin==0.6.2
+django-tinymce==1.5.2
+html5lib==1.0b3
+markdown2==2.1.0
+six==1.4.1
+sqlparse==0.1.10
+tagging==0.2.1
+wsgiref==0.1.2
