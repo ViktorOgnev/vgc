@@ -1,0 +1,196 @@
+{% extends "core/main.html" %}
+
+{% block css %}
+{#{{ block.super }} #}
+<link rel="alternate" type="application/rss+xml" title="VIP GYM CLUB » Feed" href="http://www.vipgymclub.com.ua/feed/">
+        <link rel="alternate" type="application/rss+xml" title="VIP GYM CLUB » Comments Feed" href="http://www.vipgymclub.com.ua/comments/feed/">
+        <link rel="alternate" type="application/rss+xml" title="VIP GYM CLUB » Home Comments Feed" href="http://www.vipgymclub.com.ua/home-corporate/feed/">
+        <link rel="stylesheet" id="ai1ec_stytle-css" href="{{STATIC_URL}}css/saved_resource.css" type="text/css" media="all">
+        <link rel="stylesheet" id="frm-forms0-css" href="{{STATIC_URL}}css/formidablepro.css" type="text/css" media="all">
+        <link rel="stylesheet" id="veriteco_css-css" href="{{STATIC_URL}}css/timeline.css" type="text/css" media="all">
+        <link rel="stylesheet" id="veriteco_css_custom-css" href="{{STATIC_URL}}css/timeline_custom.css" type="text/css" media="all">
+        <link rel="stylesheet" id="wp-echo-css" href="{{STATIC_URL}}css/wp-echo.css" type="text/css" media="all">
+        <link rel="stylesheet" id="jquery-combobox-css" href="{{STATIC_URL}}css/style.css" type="text/css" media="all">
+        <link rel="stylesheet" id="social-widget-css" href="{{STATIC_URL}}css/social_widget.css" type="text/css" media="all">
+        <link rel="stylesheet" id="dcwss-css" href="{{STATIC_URL}}css/dcwss.css" type="text/css" media="all">
+        <link rel="stylesheet" id="prettyPhoto-css" href="{{STATIC_URL}}css/prettyPhoto.css" type="text/css" media="all">
+        <link rel="stylesheet" id="themeblvd_plugins-css" href="{{STATIC_URL}}css/plugins.css" type="text/css" media="all">
+        <link rel="stylesheet" id="themeblvd-css" href="{{STATIC_URL}}css/themeblvd.css" type="text/css" media="all">
+        <link rel="stylesheet" id="ubermenu-basic-css" href="{{STATIC_URL}}css/basic.css" type="text/css" media="all">
+        <link rel="stylesheet" id="ubermenu-grey-white-css" href="{{STATIC_URL}}css/blackwhite.css" type="text/css" media="all">
+        <link rel="stylesheet" id="themeblvd_theme-css" href="{{STATIC_URL}}css/theme.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="themeblvd_dark-css" href="{{STATIC_URL}}css/dark.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="themeblvd_responsive-css" href="{{STATIC_URL}}css/responsive.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="themeblvd_colors-css" href="{{STATIC_URL}}css/colors.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="themeblvd_colors-css" href="{{STATIC_URL}}css/custom.css" type="text/css" media="all">
+        <!--[if lt IE 9]>
+            <link rel='stylesheet' id='themeblvd_ie-css'  href='http://www.vipgymclub.com.ua/wp-content/themes/akita/assets/css/ie.css?ver=1.1' type='text/css' media='all' />
+        <![endif]-->
+        <link rel="stylesheet" id="appointments-css" href="{{STATIC_URL}}css/front.css" type="text/css" media="all">
+        <link href="{{STATIC_URL}}css/css.css" rel="stylesheet" type="text/css">
+        <link href="{{STATIC_URL}}css/css1.css" rel="stylesheet" type="text/css">
+        <link href="{{STATIC_URL}}css/colorbox.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/css4.css">
+        <link rel="stylesheet" media="print" href="{{STATIC_URL}}css/print.css" type="text/css">
+        
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="{{STATIC_URL}}css/ubermenu.css">
+        
+        <style>
+            .fitnessTools-Cont .header{
+            display: inline-table;
+            }
+            .fitnessTools-Cont .header li{
+            display: table-cell;
+            }
+            .pass-details .margin-top-10{
+            margin-left: 20px!important;
+            margin-top: -10px!important;
+            }
+            input[type="tel"], input[type="email"]{
+            color: #555555;
+            }
+            .sidebar_right .fixed-sidebar .widget .widget-inner > div form input[type=tel],.sidebar_right .fixed-sidebar .widget .widget-inner > div form input[type=email]{
+            background-color: white!important;
+            color:black;
+            }
+        </style>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/jquery.ad-gallery.css">
+
+{% endblock css %}
+
+{% block js %}
+{#{{ block.super }}#}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery.ad-gallery.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('img.image1').data('ad-desc', 'Whoa! This description is set through elm.data("ad-desc") instead of using the longdesc attribute.<br>And it contains <strong>H</strong>ow <strong>T</strong>o <strong>M</strong>eet <strong>L</strong>adies... <em>What?</em> That aint what HTML stands for? Man...');
+        $('img.image1').data('ad-title', 'Title through $.data');
+        $('img.image4').data('ad-desc', 'This image is wider than the wrapper, so it has been scaled down');
+        $('img.image5').data('ad-desc', 'This image is higher than the wrapper, so it has been scaled down');
+        var galleries = $('.ad-gallery').adGallery({
+            width: 1050, 
+            height: 640, 
+        });
+        
+        
+        $('#switch-effect').change(
+        function() {
+            galleries[0].settings.effect = $(this).val();
+            return false;
+        }
+        );
+        $('#toggle-slideshow').click(
+        function() {
+            galleries[0].slideshow.toggle();
+            return false;
+        }
+        );
+        $('#toggle-description').click(
+        function() {
+            if(!galleries[0].settings.description_wrapper) {
+                galleries[0].settings.description_wrapper = $('#descriptions');
+                } else {
+                galleries[0].settings.description_wrapper = false;
+            }
+            return false;
+        }
+        );
+    });
+</script>
+{% endblock js %}
+
+{% block pagecontent %}
+
+<div>
+    <div class="container-custom-post">
+        <div class="list-custom-post post-newsletters">
+            <div id="post-1107" class="entry-content">
+                <div id="post-3898" class="">
+                    <h3 style="display: block !important; color: #f9e300;text-transform: uppercase;border: none;">Все фотографии</h3>
+                    
+                    <div class="clear"></div>
+                </div>
+                <div id="container">
+                    
+                    <div id="gallery" class="ad-gallery">
+                        <div class="ad-image-wrapper">
+                        </div>
+                        <div class="ad-controls">
+                        </div>
+                        <div class="ad-nav">
+                            <div class="ad-thumbs">
+                                <ul class="ad-thumb-list">
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//1.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t1.jpg" class="image0">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//10.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t10.jpg" title="A title for 10.jpg" alt="This is a nice, and incredibly descriptive, description of the image 10.jpg" class="image1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//11.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t11.jpg" title="A title for 11.jpg" longdesc="http://coffeescripter.com" alt="This is a nice, and incredibly descriptive, description of the image 11.jpg" class="image2">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//12.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t12.jpg" title="A title for 12.jpg" alt="This is a nice, and incredibly descriptive, description of the image 12.jpg" class="image3">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//13.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t13.jpg" title="A title for 13.jpg" alt="This is a nice, and incredibly descriptive, description of the image 13.jpg" class="image4">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//14.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t14.jpg" title="A title for 14.jpg" alt="This is a nice, and incredibly descriptive, description of the image 14.jpg" class="image5">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//2.jpg" id="t2">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t2.jpg" title="A title for 2.jpg" alt="This is a nice, and incredibly descriptive, description of the image 2.jpg" class="image6">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//3.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t3.jpg" title="A title for 3.jpg" alt="This is a nice, and incredibly descriptive, description of the image 3.jpg" class="image7">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//4.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t4.jpg" title="A title for 4.jpg" alt="This is a nice, and incredibly descriptive, description of the image 4.jpg" class="image8">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//5.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t5.jpg" title="A title for 5.jpg" alt="This is a nice, and incredibly descriptive, description of the image 5.jpg" class="image9">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{STATIC_URL}}img/test//6.jpg">
+                                            <img src="{{STATIC_URL}}img/test//thumbs/t6.jpg" title="A title for 6.jpg" alt="This is a nice, and incredibly descriptive, description of the image 6.jpg" class="image10">
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="descriptions">
+                        
+                    </div>
+                    
+                    
+                <a class="btn-alert pull-right" href="http://www.vipgymclub.com.ua/newsletters/" alt=""> Больше статей </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock pagecontent %}

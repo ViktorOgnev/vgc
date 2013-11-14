@@ -1,0 +1,50 @@
+/*
+ * Override custom styling for Timeline plugin.
+ */
+
+#timeline-embed {
+    background  : #050505;
+    border      : none !important;
+    margin      : 0 auto !important;
+}
+
+#timeline-embed * {
+    font-family : inherit !important;
+}
+
+#timelinejs {
+    background : #050505;
+}
+
+#timelinejs h3 {
+    font-size : 12px !important;
+}
+
+.nav-previous,
+.nav-next {
+    color : #f9e300 !important;
+}
+
+.toolbar {
+    background                 : #050505 !important;
+    border                     : none !important;
+    border-bottom-right-radius : 5px;
+    border-top-right-radius    : 5px;
+}
+
+.toolbar > div {
+    border        : none !important;
+    border-bottom : 2px solid #000000 !important;
+}
+
+.navigation {
+    border : none !important;
+}
+
+.timenav-background {
+    background : #000 !important;
+}
+
+.timenav-interval-background {
+    background : #151515 !important;
+}

@@ -1,0 +1,256 @@
+div.socialicons {
+    float: left;
+    display: block;
+    margin-right: 10px;
+}
+div.socialicons p {
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+    padding-bottom: 0!important;
+    padding-top: 0!important;
+}
+div.social4iv {
+    background: none repeat scroll 0 0 #FFF;
+    border: 1px solid #aaa;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px #DDD;
+    padding: 3px;
+    position: fixed;
+    text-align: center;
+    top: 55px;
+    width: 68px;
+    display: none;
+}
+div.socialiconsv {
+    padding-bottom: 5px;
+}
+.stream li.dcsns-twitter .section-intro,.filter .f-twitter a: hover,.wall-outer .dcsns-toolbar .filter .f-twitter a.iso-active {
+    background-color: #4ec2dc!important;
+}
+.stream li.dcsns-facebook .section-intro,.filter .f-facebook a: hover,.wall-outer .dcsns-toolbar .filter .f-facebook a.iso-active {
+    background-color: #3b5998!important;
+}
+.stream li.dcsns-google .section-intro,.filter .f-google a: hover,.wall-outer .dcsns-toolbar .filter .f-google a.iso-active {
+    background-color: #2d2d2d!important;
+}
+.stream li.dcsns-rss .section-intro,.filter .f-rss a: hover,.wall-outer .dcsns-toolbar .filter .f-rss a.iso-active {
+    background-color: #FF9800!important;
+}
+.stream li.dcsns-flickr .section-intro,.filter .f-flickr a: hover,.wall-outer .dcsns-toolbar .filter .f-flickr a.iso-active {
+    background-color: #f90784!important;
+}
+.stream li.dcsns-delicious .section-intro,.filter .f-delicious a: hover,.wall-outer .dcsns-toolbar .filter .f-delicious a.iso-active {
+    background-color: #3271CB!important;
+}
+.stream li.dcsns-youtube .section-intro,.filter .f-youtube a: hover,.wall-outer .dcsns-toolbar .filter .f-youtube a.iso-active {
+    background-color: #DF1F1C!important;
+}
+.stream li.dcsns-pinterest .section-intro,.filter .f-pinterest a: hover,.wall-outer .dcsns-toolbar .filter .f-pinterest a.iso-active {
+    background-color: #CB2528!important;
+}
+.stream li.dcsns-lastfm .section-intro,.filter .f-lastfm a: hover,.wall-outer .dcsns-toolbar .filter .f-lastfm a.iso-active {
+    background-color: #C90E12!important;
+}
+.stream li.dcsns-dribbble .section-intro,.filter .f-dribbble a: hover,.wall-outer .dcsns-toolbar .filter .f-dribbble a.iso-active {
+    background-color: #F175A8!important;
+}
+.stream li.dcsns-vimeo .section-intro,.filter .f-vimeo a: hover,.wall-outer .dcsns-toolbar .filter .f-vimeo a.iso-active {
+    background-color: #4EBAFF!important;
+}
+.stream li.dcsns-stumbleupon .section-intro,.filter .f-stumbleupon a: hover,.wall-outer .dcsns-toolbar .filter .f-stumbleupon a.iso-active {
+    background-color: #EB4924!important;
+}
+.stream li.dcsns-deviantart .section-intro,.filter .f-deviantart a: hover,.wall-outer .dcsns-toolbar .filter .f-deviantart a.iso-active {
+    background-color: #607365!important;
+}
+.stream li.dcsns-tumblr .section-intro,.filter .f-tumblr a: hover,.wall-outer .dcsns-toolbar .filter .f-tumblr a.iso-active {
+    background-color: #385774!important;
+}
+.stream li.dcsns-instagram .section-intro,.filter .f-instagram a: hover,.wall-outer .dcsns-toolbar .filter .f-instagram a.iso-active {
+    background-color: #413A33!important;
+}
+.wall-outer .dcsns-toolbar .filter li a {
+    background: #777;
+}
+.tabber {
+    display: none;
+}
+body {
+    background-color: #252525;
+    background-image: none;
+}
+.themeblvd-contact-bar li a {
+    background-image: url(http: //www.vipgymclub.com.ua/wp-content/themes/akita/framework/frontend/assets/images/parts/social-media-grey.png);
+}
+a {
+    color: #da7817;
+}
+a: hover,article .entry-title a: hover,.widget ul li a: hover,#breadcrumbs a: hover,.tags a: hover,.entry-meta a: hover {
+    color: #da5000;
+}
+#featured a {
+    color: #83bfdb;
+}
+#featured a: hover,#featured article .entry-title a: hover,#featured .widget ul li a: hover,#featured .widget ul li a: hover,#featured .tags a: hover,#featured .entry-meta a: hover {
+    color: #2a9ed4;
+}
+#bottom a,#footer_sub_content a {
+    color: #2a9ed4;
+}
+#bottom a: hover,#bottom .widget ul li a: hover,#footer_sub_content a: hover {
+    color: #1a5a78;
+}
+body {
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6,.slide-title {
+    font-family: Roboto Condensed,Arial,sans-serif;
+}
+#branding .header_logo .tb-text-logo,#content .media-full .slide-title,#featured_below .media-full .slide-title,.element-slogan .slogan .slogan-text,.element-tweet {
+    font-family: Roboto,Arial,sans-serif;
+}
+.entry-content td {
+    border: none;
+    width: 50%;
+}
+td.free,div.free {
+    background: #48c048!important;
+}
+td.busy,div.busy {
+    background: #fff!important;
+}
+td.notpossible,div.notpossible {
+    background: #fff!important;
+}
+.appointments-login_link-google {
+    display: none!important;
+}
+div.socialicons {
+    float: left;
+    display: block;
+    margin-right: 10px;
+}
+div.socialicons p {
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+    padding-bottom: 0!important;
+    padding-top: 0!important;
+}
+div.social4iv {
+    background: none repeat scroll 0 0 #FFF;
+    border: 1px solid #aaa;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px #DDD;
+    padding: 3px;
+    position: fixed;
+    text-align: center;
+    top: 55px;
+    width: 68px;
+    display: none;
+}
+div.socialiconsv {
+    padding-bottom: 5px;
+}
+.stream li.dcsns-twitter .section-intro,.filter .f-twitter a: hover,.wall-outer .dcsns-toolbar .filter .f-twitter a.iso-active {
+    background-color: #4ec2dc!important;
+}
+.stream li.dcsns-facebook .section-intro,.filter .f-facebook a: hover,.wall-outer .dcsns-toolbar .filter .f-facebook a.iso-active {
+    background-color: #3b5998!important;
+}
+.stream li.dcsns-google .section-intro,.filter .f-google a: hover,.wall-outer .dcsns-toolbar .filter .f-google a.iso-active {
+    background-color: #2d2d2d!important;
+}
+.stream li.dcsns-rss .section-intro,.filter .f-rss a: hover,.wall-outer .dcsns-toolbar .filter .f-rss a.iso-active {
+    background-color: #FF9800!important;
+}
+.stream li.dcsns-flickr .section-intro,.filter .f-flickr a: hover,.wall-outer .dcsns-toolbar .filter .f-flickr a.iso-active {
+    background-color: #f90784!important;
+}
+.stream li.dcsns-delicious .section-intro,.filter .f-delicious a: hover,.wall-outer .dcsns-toolbar .filter .f-delicious a.iso-active {
+    background-color: #3271CB!important;
+}
+.stream li.dcsns-youtube .section-intro,.filter .f-youtube a: hover,.wall-outer .dcsns-toolbar .filter .f-youtube a.iso-active {
+    background-color: #DF1F1C!important;
+}
+.stream li.dcsns-pinterest .section-intro,.filter .f-pinterest a: hover,.wall-outer .dcsns-toolbar .filter .f-pinterest a.iso-active {
+    background-color: #CB2528!important;
+}
+.stream li.dcsns-lastfm .section-intro,.filter .f-lastfm a: hover,.wall-outer .dcsns-toolbar .filter .f-lastfm a.iso-active {
+    background-color: #C90E12!important;
+}
+.stream li.dcsns-dribbble .section-intro,.filter .f-dribbble a: hover,.wall-outer .dcsns-toolbar .filter .f-dribbble a.iso-active {
+    background-color: #F175A8!important;
+}
+.stream li.dcsns-vimeo .section-intro,.filter .f-vimeo a: hover,.wall-outer .dcsns-toolbar .filter .f-vimeo a.iso-active {
+    background-color: #4EBAFF!important;
+}
+.stream li.dcsns-stumbleupon .section-intro,.filter .f-stumbleupon a: hover,.wall-outer .dcsns-toolbar .filter .f-stumbleupon a.iso-active {
+    background-color: #EB4924!important;
+}
+.stream li.dcsns-deviantart .section-intro,.filter .f-deviantart a: hover,.wall-outer .dcsns-toolbar .filter .f-deviantart a.iso-active {
+    background-color: #607365!important;
+}
+.stream li.dcsns-tumblr .section-intro,.filter .f-tumblr a: hover,.wall-outer .dcsns-toolbar .filter .f-tumblr a.iso-active {
+    background-color: #385774!important;
+}
+.stream li.dcsns-instagram .section-intro,.filter .f-instagram a: hover,.wall-outer .dcsns-toolbar .filter .f-instagram a.iso-active {
+    background-color: #413A33!important;
+}
+.wall-outer .dcsns-toolbar .filter li a {
+    background: #777;
+}
+.tabber {
+    display: none;
+}
+body {
+    background-color: #252525;
+    background-image: none;
+}
+.themeblvd-contact-bar li a {
+    background-image: url(http: //www.vipgymclub.com.ua/wp-content/themes/akita/framework/frontend/assets/images/parts/social-media-grey.png);
+}
+a {
+    color: #da7817;
+}
+a: hover,article .entry-title a: hover,.widget ul li a: hover,#breadcrumbs a: hover,.tags a: hover,.entry-meta a: hover {
+    color: #da5000;
+}
+#featured a {
+    color: #83bfdb;
+}
+#featured a: hover,#featured article .entry-title a: hover,#featured .widget ul li a: hover,#featured .widget ul li a: hover,#featured .tags a: hover,#featured .entry-meta a: hover {
+    color: #2a9ed4;
+}
+#bottom a,#footer_sub_content a {
+    color: #2a9ed4;
+}
+#bottom a: hover,#bottom .widget ul li a: hover,#footer_sub_content a: hover {
+    color: #1a5a78;
+}
+body {
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6,.slide-title {
+    font-family: Roboto Condensed,Arial,sans-serif;
+}
+#branding .header_logo .tb-text-logo,#content .media-full .slide-title,#featured_below .media-full .slide-title,.element-slogan .slogan .slogan-text,.element-tweet {
+    font-family: Roboto,Arial,sans-serif;
+}
+.entry-content td {
+    border: none;
+    width: 50%;
+}
+td.free,div.free {
+    background: #48c048!important;
+}
+td.busy,div.busy {
+    background: #fff!important;
+}
+td.notpossible,div.notpossible {
+    background: #fff!important;
+}
+.appointments-login_link-google {
+    display: none!important;
+}

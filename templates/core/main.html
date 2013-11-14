@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+
+{% block css %}
+    {{ block.super}}
+{% endblock css %}
+
+
+{% block js %}
+    {{block.super}}
+{% endblock js%}
+
+
+{% block content%}
+<div id="wrapper">
+    <div id="container">
+        {% include "core/responsive_nav_form.html"%}
+        {% include "core/horisontal_menu.html" %}
+                <!-- .menu_style_classic (end) -->
+                <!-- HEADER (start) -->
+                <!-- HEADER (end) -->
+                <div id="internal_wrapper">
+                    <div class="internal_wrapper-inner">
+                        <!-- MAIN (start) -->
+                        <div id="main" class="full_width">
+                            <div class="main-inner">
+                                <div class="main-content">
+                                    <div class="grid-protection">
+                                        <div class="main-top"></div>
+                                        <!-- .main-top (end) -->
+                                        <div id="breadcrumbs">
+                                            <div class="breadcrumbs-inner">
+                                                <div class="breadcrumbs-content"><a href="{{STATIC_URL}}css/VIP GYM CLUB   Know Your Own Strength.htm" class="home-link" title="Home">Home</a>» <span class="current">Home</span></div>
+                                                <!-- .breadcrumbs-content (end) -->
+                                            </div>
+                                            <!-- .breadcrumbs-inner (end) -->
+                                        </div>
+                                        <!-- #breadcrumbs (end) -->
+                                        {% block pagecontent %}
+                                        {% endblock pagecontent %}
+                                        <!-- .sidebar-layout-wrapper (end) -->
+                                        <div style="display:none">
+                                        </div>
+                                        <div class="main-bottom"></div>
+                                        <!-- .main-bottom (end) -->						
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- .grid-protection (end) -->
+                                </div>
+                                <!-- .main-content (end) -->
+                            </div>
+                            <!-- .main-inner (end) -->
+                        </div>
+                        <!-- #main (end) -->
+                        <!-- MAIN (end) -->
+                    </div>
+                    <!-- .internal_wrapper-inner (end) -->
+                </div>
+                <!-- #internal_wrapper (end) -->		
+                <!-- FOOTER (start) -->
+                <div id="bottom">
+                    <footer id="colophon" role="contentinfo">
+                        <div class="content">
+                            <div class="menu-footer-top-container">
+                                <ul id="menu-footer-top" class="menu">
+                                    <li id="menu-item-290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a href="http://www.vipgymclub.com.ua/militarydiscount/">ДИСКОНТНЫЕ ПРОГРАММЫ</a></li>
+                                    <li id="menu-item-1424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1424"><a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/franchise-opportunities/">ВАКАНСИИ</a></li>
+                                    <li id="menu-item-1659" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1659"><a target="_blank" href="http://www.vipgear.com/category/">ОБОРУДОВАНИЕ PRO-G</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- .content (end) -->
+                    </footer>
+                    <!-- #colophon (end) -->
+                </div>
+                <!-- #bottom (end) -->
+                <!-- FOOTER (end) -->
+            </div>
+            <!-- #container (end) -->
+        </div>        
+    {% endblock content%}    

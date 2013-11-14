@@ -1,31 +1,16 @@
 from django import template
-from coltrane.models import Entry
 from django.db.models import get_model
 from django.utils.encoding import smart_str
+
+from ..models import Entry
 
 YEAR_LIST = [2012, 2013]
 FORMATTED_MONTH = {'jan': 'January', 'feb':'February', 'mar':'March', 'apr':'April',
                    'may':'May', 'jun':'June', 'jul':'July', 'aug':'August',
                    'sep':'September', 'oct':'October', 'nov':'Noember', 'dec':'December' }
 
-# -------This code:
+register = template.Library()
 
-# def do_latest_entries(parser, token):
-    # return LatestEntriesNode()
-
-    
-# class LatestEntriesNode(template.Node):
-    
-    # def render(self, context):
-        # context['latest_entries'] = Entry.live.all()[:5]
-        # return ''
-
-# register = template.Library()
-# register.tag('get_latest_entries', do_latest_entries)
-
-
-# ------------- Was generalized to become this:
-    
 def do_latest_content(parser, token):
     bits = token.split_contents()
     if len(bits) != 5:
@@ -54,7 +39,7 @@ class LatestContentNode(template.Node):
         context[self.varname] = self.model._default_manager.all()[:self.num]
         return ''
         
-register = template.Library()
+
 register.tag('get_latest_content', do_latest_content)
 
 
@@ -282,7 +267,12 @@ class IAllObjects(template.Node):
 #-------------------------------------------------------------------------------  
 
 
-
+@register.inclusion_tag("tags/section_header.html")
+def section_header(header_text):
+    """
+    Usage: {% section_header header_text %}
+    """
+    return {'header_text': header_text}
 
 
 

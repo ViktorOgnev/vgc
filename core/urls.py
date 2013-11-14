@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic import dates
 from django.views.generic.list import ListView
+from django.views.generic.base import TemplateView
 # from tagging.models import Tag
 # from tagging.views import tagged_object_list
 from .views import EntryList
@@ -11,10 +12,10 @@ entry_view_params = {'queryset': Entry.live.all(), 'date_field': "pub_date"}
 urlpatterns = patterns('',
     
     # Entry URLs
-    
-    url(r'^/?$',
-            EntryList.as_view(**entry_view_params),
-            name='coltrane_entry_archive_index'),
+    url(r'^/?$', TemplateView.as_view(template_name="core/home_page.html")),
+    # url(r'^/?$',
+            # EntryList.as_view(**entry_view_params),
+            # name='coltrane_entry_archive_index'),
     url(r'^/(?P<year>\d{4})/?$',
             dates.YearArchiveView.as_view(**entry_view_params),
             name='coltrane_entry_archive_year'),

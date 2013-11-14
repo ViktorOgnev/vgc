@@ -1,14 +1,12 @@
-admin  admin_tools  debug_toolbar  filebrowser  grappelli  tiny_mce
-
-static/admin/
-static/admin_tools/
-static/debug_toolbar/
-static/filebrowser/
-static/grappelli/
-static/tiny_mce/
-private_settings.py
-log/*.log
-media/upfiles/*
+admin/
+admin_tools/
+debug_toolbar/
+filebrowser/
+grappelli/
+tiny_mce/
+AD Gallery 1.2.7/
+log/
+media/upfiles/
 media/
 nppBackup/
 *.pyc
@@ -16,3 +14,6 @@ nppBackup/
 *.tar
 *.gz
 *.db
+*.jpg
+*.psd
+private_settings.py
