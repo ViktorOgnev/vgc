@@ -7,12 +7,13 @@ class PhotoAdmin(admin.ModelAdmin):
 
     prepopulated_fields = {'slug':['title']}
     field_options = {'classes': ['collapse', 'extrapretty'],}
-    list_display = ['title','pk', 'slug', 'pub_date']
-    search_fields = ['pk', 'title', 'pub_date'] 
-    list_filter = ['pub_date','albums']
+    list_display = ['title', 'pk', 'slug', 'pub_date']
+    search_fields = ['pk', 'title', 'pub_date', 'albums__title'] 
+    list_filter = ['pub_date','albums__title']
     date_hierarchy = 'pub_date'
     ordering = ['-pub_date']
-    
+    save_as = True
+
 class AlbumAdmin(admin.ModelAdmin):
     list_filter = ['pub_date']
     prepopulated_fields = {'slug':['title']}

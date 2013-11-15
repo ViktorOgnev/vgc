@@ -12,54 +12,57 @@ entry_view_params = {'queryset': Entry.live.all(), 'date_field': "pub_date"}
 urlpatterns = patterns('',
     
     # Entry URLs
-    url(r'^/?$', TemplateView.as_view(template_name="core/home_page.html")),
+    url(r'^/?$', TemplateView.as_view(template_name="core/home_page.html"), name="core_home"),
+    
+
+
     # url(r'^/?$',
             # EntryList.as_view(**entry_view_params),
             # name='coltrane_entry_archive_index'),
-    url(r'^/(?P<year>\d{4})/?$',
-            dates.YearArchiveView.as_view(**entry_view_params),
-            name='coltrane_entry_archive_year'),
-    url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/?$',
-            dates.MonthArchiveView.as_view(**entry_view_params),
-            name='coltrane_entry_archive_month'),
-    url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/?$',
-            dates.DayArchiveView.as_view(**entry_view_params),
-            name='coltrane_entry_archive_day'),
-    url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/?$', 
-            dates.DateDetailView.as_view(**entry_view_params),
-            name='coltrane_entry_detail'),
+    # url(r'^/(?P<year>\d{4})/?$',
+    #         dates.YearArchiveView.as_view(**entry_view_params),
+    #         name='coltrane_entry_archive_year'),
+    # url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/?$',
+    #         dates.MonthArchiveView.as_view(**entry_view_params),
+    #         name='coltrane_entry_archive_month'),
+    # url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/?$',
+    #         dates.DayArchiveView.as_view(**entry_view_params),
+    #         name='coltrane_entry_archive_day'),
+    # url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/?$', 
+    #         dates.DateDetailView.as_view(**entry_view_params),
+    #         name='coltrane_entry_detail'),
     
-    url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/?$', 
-            dates.DateDetailView.as_view(**entry_view_params),
-            name='coltrane_entry_detail'),
+    # url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/?$', 
+    #         dates.DateDetailView.as_view(**entry_view_params),
+    #         name='coltrane_entry_detail'),
     
-    # Link URLs
+    # # Link URLs
     
-    url(r'^/links/?$',
-            dates.ArchiveIndexView.as_view(model=Link, date_field="pub_date"),
-            name='coltrane_link_archive_index'),
-    url(r'^/links/(?P<year>\d{4})/?$',
-            dates.YearArchiveView.as_view(model=Link, date_field="pub_date"),
-            name='coltrane_link_archive_year'),
-    url(r'^/links/(?P<year>\d{4})/(?P<month>\w{3})/?$',
-            dates.MonthArchiveView.as_view(model=Link, date_field="pub_date"),
-            name='coltrane_link_archive_month'),
-    url(r'^/links/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{1,2})/?$',
-            dates.DayArchiveView.as_view(model=Link, date_field="pub_date"),
-            name='coltrane_link_archive_day'),
-    url(r'^/links/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/?$', 
-            dates.DateDetailView.as_view(model=Link, date_field="pub_date"),
-            name='coltrane_link_detail'),
+    # url(r'^/links/?$',
+    #         dates.ArchiveIndexView.as_view(model=Link, date_field="pub_date"),
+    #         name='coltrane_link_archive_index'),
+    # url(r'^/links/(?P<year>\d{4})/?$',
+    #         dates.YearArchiveView.as_view(model=Link, date_field="pub_date"),
+    #         name='coltrane_link_archive_year'),
+    # url(r'^/links/(?P<year>\d{4})/(?P<month>\w{3})/?$',
+    #         dates.MonthArchiveView.as_view(model=Link, date_field="pub_date"),
+    #         name='coltrane_link_archive_month'),
+    # url(r'^/links/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{1,2})/?$',
+    #         dates.DayArchiveView.as_view(model=Link, date_field="pub_date"),
+    #         name='coltrane_link_archive_day'),
+    # url(r'^/links/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/?$', 
+    #         dates.DateDetailView.as_view(model=Link, date_field="pub_date"),
+    #         name='coltrane_link_detail'),
     
     
     
-    # Category URLs
+    # # Category URLs
     
-    url(r'^/categories/$', ListView.as_view(model=Category), 
-            name='coltrane_category_list'),
+    # url(r'^/categories/$', ListView.as_view(model=Category), 
+    #         name='coltrane_category_list'),
     
-    url(r'^/categories/(?P<slug>[-\w]+)/$', 'core.views.category_detail',
-            name='coltrane_category_detail'),
+    # url(r'^/categories/(?P<slug>[-\w]+)/$', 'core.views.category_detail',
+    #         name='coltrane_category_detail'),
     
     # # Tag URLs
     

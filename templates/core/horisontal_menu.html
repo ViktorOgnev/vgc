@@ -1,133 +1,300 @@
 <div class="menu_style menu_style_classic">
-            <nav id="access" role="navigation">
-                <div class="container ">
-                    <div class="content">
-                        <div id="megaMenu" class="megaMenuContainer wpmega-preset-grey-white megaResponsive megaResponsiveToggle wpmega-withjs megaMenuOnHover megaFullWidthSubs megaFullWidth megaMenuHorizontal wpmega-noconflict megaMinimizeResiduals megaResetStyles megaMenu-withjs">
-                            <div id="megaMenuToggle" class="megaMenuToggle">Menu&nbsp; <span class="megaMenuToggle-icon"></span></div>
-                            <ul id="megaUber" class="megaMenu">
-                                <li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-0 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter"><a href="http://www.vipgymclub.com.ua/get-started/"><span class="wpmega-link-title">Начать <br> Занятия</span></a></li>
-                                <li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page mega-with-sub ss-nav-menu-item-1 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
-                                    <a href="http://www.vipgymclub.com.ua/why-vip-gym/"><span class="wpmega-link-title">Почему <br> ViP Gym Club</span></a>
-                                    <ul class="sub-menu sub-menu-1" style="display: none;">
-                                        <li id="menu-item-327" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+    <nav id="access" role="navigation">
+        <div class="container ">
+            <div class="content">
+                <div id="megaMenu" class="megaMenuContainer wpmega-preset-grey-white megaResponsive megaResponsiveToggle wpmega-withjs megaMenuOnHover megaFullWidthSubs megaFullWidth megaMenuHorizontal wpmega-noconflict megaMinimizeResiduals megaResetStyles megaMenu-withjs">
+                    <div id="megaMenuToggle" class="megaMenuToggle">
+                        Menu&nbsp;
+                        <span class="megaMenuToggle-icon"></span>
+                    </div>
+                    <ul id="megaUber" class="megaMenu">
+                        <li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-0 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                            <a href="{% url 'core_home' %}">
+                                <span class="wpmega-link-title">
+                                    Домашняя
+                                    <br>Страница</span>
+                            </a>
+                        </li>
+                        <li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page mega-with-sub ss-nav-menu-item-1 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                            <a href="http://www.vipgymclub.com.ua/why-vip-gym/">
+                                <span class="wpmega-link-title">
+                                    Почему
+                                    <br>ViP Gym Club</span>
+                            </a>
+                            <ul class="sub-menu sub-menu-1" style="display: none;">
+                                <li id="menu-item-327" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                    <ul class="sub-menu sub-menu-2">
+                                        <li id="menu-item-330" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-notext ss-nav-menu-nolink ss-sidebar">
+                                            <div class="wpmega-nonlink wpmega-widgetarea ss-colgroup-1 uberClearfix">
+                                                <ul class="um-sidebar" id="wpmega-wpmega-sidebar-2">
+                                                    <li id="simpleimage-6" class="widget widget_simpleimage">
+                                                        <p class="simple-image">
+                                                            <img width="250" height="203" src="{{STATIC_URL}}img/stronger-with-vipgym.jpeg" class="attachment-full" alt="stronger-with-vipgym"></p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-328" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                    <ul class="sub-menu sub-menu-2">
+                                        <li id="menu-item-1374" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2">
+                                            <a href="http://www.vipgymclub.com.ua/why-vip-gym/">
+                                                <span class="wpmega-link-title">Почему VIP GYM CLUB</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-479" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2">
+                                            <a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/">
+                                                <span class="wpmega-link-title">О VIP GYM CLUB</span>
+                                            </a>
+                                            <ul class="sub-menu sub-menu-3">
+                                                <li id="menu-item-481" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-3">
+                                                    <a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/press-room/">
+                                                        <span class="wpmega-link-title">Задать вопрос</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-950" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-3">
+                                                    <a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/careers/">
+                                                        <span class="wpmega-link-title">Карьеры</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-951" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-3">
+                                                    <a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/franchise-opportunities/">
+                                                        <span class="wpmega-link-title">Корпоративные предложения</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-304" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                    <ul class="sub-menu sub-menu-2">
+                                        <li id="menu-item-1405" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
+                                            <a href="http://www.vipgymclub.com.ua/strength-with-knowledge/fitness-tools/">
+                                                <span class="wpmega-link-title">Фитнесс оборудование</span>
+                                                <span class="wpmega-item-description">
+                                                    Отставайтесь всегда на фолне хорошей формы.
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
+                                            <a href="http://www.vipgymclub.com.ua/why-vip-gym/programs/">
+                                                <span class="wpmega-link-title">Наши программы</span>
+                                                <span class="wpmega-item-description">
+                                                    Мы работаем чтобы сделать Вас сильне во всех отношениях, именно это отличает нас.
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-947" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
+                                            <a href="http://www.vipgymclub.com.ua/why-vip-gym/amenities/">
+                                                <span class="wpmega-link-title">условия у нас.</span>
+                                                <span class="wpmega-item-description">
+                                                    Взгляните на оборудование высшего класса, которое поможет Вам стать сильнее
+                                                    <span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-305" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
                                             <ul class="sub-menu sub-menu-2">
-                                                <li id="menu-item-330" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-notext ss-nav-menu-nolink ss-sidebar">
+                                                <li id="menu-item-953" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
+                                                    <a href="http://www.vipgymclub.com.ua/why-vip-gym/corporate-wellness/">
+                                                        <span class="wpmega-link-title">Корпоративные предложения</span>
+                                                        <span class="wpmega-item-description">
+                                                            Посмотрите, как можно поддерживать здоровье всей Вашей компании.
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-1100" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
+                                                    <a href="http://www.vipgymclub.com.ua/classes/">
+                                                        <span class="wpmega-link-title">Наши группы</span>
+                                                        <span class="wpmega-item-description">
+                                                            У нас тут не просто тяжести. Взгляните на занятия проводимые лушими инструкторами.
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-1603" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-2 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                                    <a href="http://www.vipgymclub.com.ua/amenities/">
+                                        <span class="wpmega-link-title">
+                                            условия у
+                                            <br>Нас</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-1063" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-3 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                                    <a href="{% url 'photogallery_list' %}">
+                                        <span class="wpmega-link-title">
+                                            Фото
+                                            <br>Зала</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-1067" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-4 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                                    <a href="http://www.vipgymclub.com.ua/classes/">
+                                        <span class="wpmega-link-title">
+                                            Подобрать
+                                            <br>Группу</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-1604" class="menu-item menu-item-type-custom menu-item-object-custom mega-with-sub ss-nav-menu-item-5 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                                    <a href="http://www.vipgymclub.com.ua/calendar/">
+                                        <span class="wpmega-link-title">
+                                            Расписание
+                                            <br>Залов</span>
+                                    </a>
+                                    <ul class="sub-menu sub-menu-1" style="display: none;">
+                                        <li id="menu-item-1664" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                            <ul class="sub-menu sub-menu-2">
+                                                <li id="menu-item-1665" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-notext ss-nav-menu-nolink ss-sidebar">
                                                     <div class="wpmega-nonlink wpmega-widgetarea ss-colgroup-1 uberClearfix">
-                                                        <ul class="um-sidebar" id="wpmega-wpmega-sidebar-2">
-                                                            <li id="simpleimage-6" class="widget widget_simpleimage">
-                                                                <p class="simple-image"><img width="250" height="203" src="{{STATIC_URL}}img/stronger-with-vipgym.jpeg" class="attachment-full" alt="stronger-with-vipgym"></p>
+                                                        <ul class="um-sidebar" id="wpmega-wpmega-sidebar-3">
+                                                            <li id="simpleimage-7" class="widget widget_simpleimage">
+                                                                <p class="simple-image">
+                                                                    <img width="497" height="117" src="{{STATIC_URL}}img/cardio-cinema-nav2.jpg" class="attachment-full" alt="cardio-cinema-nav2"></p>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li id="menu-item-328" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                        <li id="menu-item-1666" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
                                             <ul class="sub-menu sub-menu-2">
-                                                <li id="menu-item-1374" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/why-vip-gym/"><span class="wpmega-link-title">Почему VIP GYM CLUB</span></a></li>
-                                                <li id="menu-item-479" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2">
-                                                    <a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/"><span class="wpmega-link-title">О VIP GYM CLUB</span></a>
-                                                    <ul class="sub-menu sub-menu-3">
-                                                        <li id="menu-item-481" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-3"><a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/press-room/"><span class="wpmega-link-title">Задать вопрос</span></a></li>
-                                                        <li id="menu-item-950" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-3"><a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/careers/"><span class="wpmega-link-title">Карьеры</span></a></li>
-                                                        <li id="menu-item-951" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-3"><a href="http://www.vipgymclub.com.ua/why-vip-gym/about-vip/franchise-opportunities/"><span class="wpmega-link-title">Корпоративные предложения</span></a></li>
-                                                    </ul>
+                                                <li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-with-desc">
+                                                    <a href="http://www.vipgymclub.com.ua/calendar/">
+                                                        <span class="wpmega-link-title">Gym Schedule</span>
+                                                        <span class="wpmega-item-description">View upcoming classes and events.</span>
+                                                    </a>
                                                 </li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-304" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
-                                            <ul class="sub-menu sub-menu-2">
-                                                <li id="menu-item-1405" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/strength-with-knowledge/fitness-tools/"><span class="wpmega-link-title">Фитнесс оборудование</span><span class="wpmega-item-description">Отставайтесь всегда на фолне хорошей формы.</span></a></li>
-                                                <li id="menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/why-vip-gym/programs/"><span class="wpmega-link-title">Наши программы</span><span class="wpmega-item-description">Мы работаем чтобы сделать Вас сильне во всех отношениях, именно это отличает нас.</span></a></li>
-                                                <li id="menu-item-947" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/why-vip-gym/amenities/"><span class="wpmega-link-title">условия у нас.</span><span class="wpmega-item-description">Взгляните на оборудование высшего класса, которое поможет Вам стать сильнее<span></a></li>
-                                                </ul>
-                                                </li>
-                                                <li id="menu-item-305" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
-                                                    <ul class="sub-menu sub-menu-2">
-                                                        <li id="menu-item-953" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/why-vip-gym/corporate-wellness/"><span class="wpmega-link-title">Корпоративные предложения</span><span class="wpmega-item-description">Посмотрите, как можно поддерживать здоровье всей Вашей компании.</span></a></li>
-                                                        <li id="menu-item-1100" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/classes/"><span class="wpmega-link-title">Наши группы</span><span class="wpmega-item-description">У нас тут не просто тяжести. Взгляните на занятия проводимые лушими инструкторами.</span></a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-1603" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-2 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter"><a href="http://www.vipgymclub.com.ua/amenities/"><span class="wpmega-link-title">условия у <br>Нас</span></a></li>
-                                        <li id="menu-item-1063" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-3 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter"><a href="http://www.vipgymclub.com.ua/locate-a-gym/"><span class="wpmega-link-title">Найти <br>Зал</span></a></li>
-                                        <li id="menu-item-1067" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-4 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter"><a href="http://www.vipgymclub.com.ua/classes/"><span class="wpmega-link-title">Подобрать <br> Группу</span></a></li>
-                                        <li id="menu-item-1604" class="menu-item menu-item-type-custom menu-item-object-custom mega-with-sub ss-nav-menu-item-5 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
-                                            <a href="http://www.vipgymclub.com.ua/calendar/"><span class="wpmega-link-title">Расписание <br>Залов</span></a>
-                                            <ul class="sub-menu sub-menu-1" style="display: none;">
-                                                <li id="menu-item-1664" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
-                                                    <ul class="sub-menu sub-menu-2">
-                                                        <li id="menu-item-1665" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-notext ss-nav-menu-nolink ss-sidebar">
-                                                            <div class="wpmega-nonlink wpmega-widgetarea ss-colgroup-1 uberClearfix">
-                                                                <ul class="um-sidebar" id="wpmega-wpmega-sidebar-3">
-                                                                    <li id="simpleimage-7" class="widget widget_simpleimage">
-                                                                        <p class="simple-image"><img width="497" height="117" src="{{STATIC_URL}}img/cardio-cinema-nav2.jpg" class="attachment-full" alt="cardio-cinema-nav2"></p>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="menu-item-1666" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
-                                                    <ul class="sub-menu sub-menu-2">
-                                                        <li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/calendar/"><span class="wpmega-link-title">Gym Schedule</span><span class="wpmega-item-description">View upcoming classes and events.</span></a></li>
-                                                        <li id="menu-item-2008" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/cardio-cinema-schedule/"><span class="wpmega-link-title">Cardio Cinema</span><span class="wpmega-item-description">Time and calories fly in this fun environment set to full-length feature films.</span></a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-1068" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-6 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter"><a href="http://www.vipgymclub.com.ua/our-trainers/"><span class="wpmega-link-title">Наши <br> Тренеры</span></a></li>
-                                        <li id="menu-item-1606" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-7 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter"><a href="http://www.vipgymclub.com.ua/trainer/"><span class="wpmega-link-title">Gym Personal <br>Trainers</span></a></li>
-                                        <li id="menu-item-494" class="menu-item menu-item-type-post_type menu-item-object-page mega-with-sub ss-nav-menu-item-8 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
-                                            <a href="http://www.vipgymclub.com.ua/strength-with-knowledge/"><span class="wpmega-link-title">Сила <br> с подходом</span></a>
-                                            <ul class="sub-menu sub-menu-1" style="display: none;">
-                                                <li id="menu-item-727" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
-                                                    <ul class="sub-menu sub-menu-2">
-                                                        <li id="menu-item-745" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-notext ss-nav-menu-nolink ss-sidebar">
-                                                            <div class="wpmega-nonlink wpmega-widgetarea ss-colgroup-1 uberClearfix">
-                                                                <ul class="um-sidebar" id="wpmega-wpmega-sidebar-5">
-                                                                    <li id="simpleimage-8" class="widget widget_simpleimage">
-                                                                        <p class="simple-image"><img width="250" height="203" src="{{STATIC_URL}}img/strongerKnowledge1.png" class="attachment-full" alt="strongerKnowledge"></p>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li id="menu-item-746" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
-                                                    <ul class="sub-menu sub-menu-2">
-                                                        <li id="menu-item-743" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/lose_weight/"><span class="wpmega-link-title">Сбросить вес</span></a></li>
-                                                        <li id="menu-item-737" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/build_muscle/"><span class="wpmega-link-title">Нарастить мышечную массу</span></a></li>
-                                                        <li id="menu-item-738" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/improve_cardiovascular/"><span class="wpmega-link-title">Улучшиьт кардиорежим</span></a></li>
-                                                        <li id="menu-item-742" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/increase_strength/"><span class="wpmega-link-title">Повысить силу</span></a></li>
-                                                        <li id="menu-item-740" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/increase_endurance/"><span class="wpmega-link-title">Повысить выносливость</span></a></li>
-                                                    </ul>
-                                                </li>
-                                                <li id="menu-item-747" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
-                                                    <ul class="sub-menu sub-menu-2">
-                                                        <li id="menu-item-741" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/increase_flexibility/"><span class="wpmega-link-title">Стать гибче</span></a></li>
-                                                        <li id="menu-item-744" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/relieve_stress/"><span class="wpmega-link-title">Снять стресс</span></a></li>
-                                                        <li id="menu-item-739" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/improve_overall_health/"><span class="wpmega-link-title">Общее оздоровление</span></a></li>
-                                                        <li id="menu-item-816" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/all_about_nutrition/"><span class="wpmega-link-title">Питание</span></a></li>
-                                                        <li id="menu-item-817" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2"><a href="http://www.vipgymclub.com.ua/article_category/just_for_fun/"><span class="wpmega-link-title">Просто так))</span></a></li>
-                                                    </ul>
-                                                </li>
-                                                <li id="menu-item-748" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
-                                                    <ul class="sub-menu sub-menu-2">
-                                                        <li id="menu-item-2256" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/our-feeds/"><span class="wpmega-link-title">Мы в соцсетях</span><span class="wpmega-item-description">Get your daily dose of strength.</span></a></li>
-                                                        <li id="menu-item-1390" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc"><a href="http://www.vipgymclub.com.ua/strength-with-knowledge/fitness-tools/"><span class="wpmega-link-title">Фитнес оборудование</span><span class="wpmega-item-description">Stay on track with our free fitness tools.</span></a></li>
-                                                    </ul>
+                                                <li id="menu-item-2008" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-with-desc">
+                                                    <a href="http://www.vipgymclub.com.ua/cardio-cinema-schedule/">
+                                                        <span class="wpmega-link-title">Cardio Cinema</span>
+                                                        <span class="wpmega-item-description">
+                                                            Time and calories fly in this fun environment set to full-length feature films.
+                                                        </span>
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <!-- .content (end) -->
+                                </li>
+                                <li id="menu-item-1068" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-6 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                                    <a href="http://www.vipgymclub.com.ua/our-trainers/">
+                                        <span class="wpmega-link-title">
+                                            Наши
+                                            <br>Тренеры</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-1606" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-7 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                                    <a href="http://www.vipgymclub.com.ua/trainer/">
+                                        <span class="wpmega-link-title">
+                                            Gym Personal
+                                            <br>Trainers</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-494" class="menu-item menu-item-type-post_type menu-item-object-page mega-with-sub ss-nav-menu-item-8 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-alignCenter">
+                                    <a href="http://www.vipgymclub.com.ua/strength-with-knowledge/">
+                                        <span class="wpmega-link-title">
+                                            Сила
+                                            <br>с подходом</span>
+                                    </a>
+                                    <ul class="sub-menu sub-menu-1" style="display: none;">
+                                        <li id="menu-item-727" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                            <ul class="sub-menu sub-menu-2">
+                                                <li id="menu-item-745" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-2 ss-nav-menu-notext ss-nav-menu-nolink ss-sidebar">
+                                                    <div class="wpmega-nonlink wpmega-widgetarea ss-colgroup-1 uberClearfix">
+                                                        <ul class="um-sidebar" id="wpmega-wpmega-sidebar-5">
+                                                            <li id="simpleimage-8" class="widget widget_simpleimage">
+                                                                <p class="simple-image">
+                                                                    <img width="250" height="203" src="{{STATIC_URL}}img/strongerKnowledge1.png" class="attachment-full" alt="strongerKnowledge"></p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-746" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                            <ul class="sub-menu sub-menu-2">
+                                                <li id="menu-item-743" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/lose_weight/">
+                                                        <span class="wpmega-link-title">Сбросить вес</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-737" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/build_muscle/">
+                                                        <span class="wpmega-link-title">Нарастить мышечную массу</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-738" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/improve_cardiovascular/">
+                                                        <span class="wpmega-link-title">Улучшиьт кардиорежим</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-742" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/increase_strength/">
+                                                        <span class="wpmega-link-title">Повысить силу</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-740" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/increase_endurance/">
+                                                        <span class="wpmega-link-title">Повысить выносливость</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-747" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                            <ul class="sub-menu sub-menu-2">
+                                                <li id="menu-item-741" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/increase_flexibility/">
+                                                        <span class="wpmega-link-title">Стать гибче</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-744" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/relieve_stress/">
+                                                        <span class="wpmega-link-title">Снять стресс</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-739" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/improve_overall_health/">
+                                                        <span class="wpmega-link-title">Общее оздоровление</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-816" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/all_about_nutrition/">
+                                                        <span class="wpmega-link-title">Питание</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-817" class="menu-item menu-item-type-taxonomy menu-item-object-article_category ss-nav-menu-item-depth-2">
+                                                    <a href="http://www.vipgymclub.com.ua/article_category/just_for_fun/">
+                                                        <span class="wpmega-link-title">Просто так))</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-748" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+                                            <ul class="sub-menu sub-menu-2">
+                                                <li id="menu-item-2256" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
+                                                    <a href="http://www.vipgymclub.com.ua/our-feeds/">
+                                                        <span class="wpmega-link-title">Мы в соцсетях</span>
+                                                        <span class="wpmega-item-description">Get your daily dose of strength.</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-1390" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
+                                                    <a href="http://www.vipgymclub.com.ua/strength-with-knowledge/fitness-tools/">
+                                                        <span class="wpmega-link-title">Фитнес оборудование</span>
+                                                        <span class="wpmega-item-description">
+                                                            Stay on track with our free fitness tools.
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                        <!-- .container (end) -->
-                    </nav>
-                    <!-- #access (end) -->
-                </div>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- .content (end) --> </div>
+                <!-- .container (end) --> </nav>
+            <!-- #access (end) --> </div>

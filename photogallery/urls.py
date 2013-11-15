@@ -11,10 +11,10 @@ photo_view_params = {'queryset': Photo.objects.all(), 'date_field': "pub_date"}
 urlpatterns = patterns('',
     
 
-    # url(r'', 'photogallery.views.render_albums',
-        # name='photogallery_list'),
+    url(r'^/?$', 'photogallery.views.render_albums',
+       name='photogallery_list'),
     
-     url(r'^/?$', TemplateView.as_view(template_name="photogallery/photo_list.html")),
+    # url(r'^/?$', TemplateView.as_view(template_name="photogallery/photo_list.html")),
     
     
     url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/?$', 
