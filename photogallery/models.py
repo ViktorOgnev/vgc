@@ -4,7 +4,7 @@ from markdown2 import markdown
 from os.path import join, split
 from os import listdir
 import datetime
-from core.aux_utils import get_image_path, produce_resized_image, transliterate, \
+from utils.aux_utils import get_image_path, produce_resized_image, transliterate, \
                                space_to_underscore
 from vgc.settings import GLRY_THUMB_SIZE, GLRY_ZOOM_IN_SIZE, MEDIA_URL, IMG_UPLD_DIR 
 from core.models import Location

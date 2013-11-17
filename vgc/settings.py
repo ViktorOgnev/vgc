@@ -56,7 +56,7 @@ INSTALLED_APPS = (
     'filebrowser',
     'tinymce',
     
-    #'south',
+    'south',
     
     # project specific
     'core',
@@ -65,6 +65,7 @@ INSTALLED_APPS = (
     'photogallery',
     'contacts',
     'mailit',
+    'personnel',
     
     
 )

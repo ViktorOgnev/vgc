@@ -2,7 +2,6 @@ from django.shortcuts import get_object_or_404, render_to_response
 from django.views.generic.list import ListView
 from django.views.generic.dates import ArchiveIndexView
 from django.views.generic.edit import FormView
-from django.core.urlresolvers import reverse
 from django.core.mail import send_mail
 
 from photogallery.models import Photo, Album
@@ -118,7 +117,7 @@ def entry_detail(request, year, month, day, slug):
                                           
                                                 
 def category_list(request):
-    return render_to_reponse('core/category_list.html', 
+    return render_to_response('core/category_list.html', 
                              {'object_list' : Category.objects.all()})
                               
 def category_detail(request, slug):

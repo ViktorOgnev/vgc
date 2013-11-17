@@ -21,7 +21,7 @@ from markdown2 import markdown
 from tinymce import models as tinymce_models
 
 from vgc.settings import SLIDER_THUMBNAIL_SIZE, STANDARD_THUMBNAIL_SIZE, IMG_UPLD_DIR, MEDIA_URL
-from .aux_utils import transliterate, get_image_path, produce_resized_image, space_to_underscore
+from utils.aux_utils import transliterate, get_image_path, produce_resized_image, space_to_underscore
 
 #---------- Comment-related imports
 

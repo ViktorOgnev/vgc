@@ -16,5 +16,6 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('django.contrib.auth.urls')),
     #url(r'^accounts/register/?$', 'accounts.views.register', name="register"),
     url(r'^photogallery/', include('photogallery.urls')),
+    url(r'^personnel/', include('personnel.urls')),
     url(r'', include('core.urls')),
 )
