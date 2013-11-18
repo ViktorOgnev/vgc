@@ -29,3 +29,7 @@ ol.inline > li {
     position:relative;
     top: 14px;
 }
+.thumbnail{
+  max-width: 200px;
+  height: auto;
+}

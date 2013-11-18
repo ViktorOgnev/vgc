@@ -1,0 +1,89 @@
+{% extends "core/main.html" %}
+
+{% load core_tags %}
+{% block css %}
+
+<link rel="stylesheet" id="themeblvd-css" href="{{STATIC_URL}}css/themeblvd.css" type="text/css" media="all">
+<link rel="stylesheet" id="ubermenu-basic-css" href="{{STATIC_URL}}css/basic.css" type="text/css" media="all">
+<link rel="stylesheet" id="ubermenu-grey-white-css" href="{{STATIC_URL}}css/blackwhite.css" type="text/css" media="all">
+<link rel="stylesheet" id="themeblvd_theme-css" href="{{STATIC_URL}}css/theme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="themeblvd_dark-css" href="{{STATIC_URL}}css/dark.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="themeblvd_responsive-css" href="{{STATIC_URL}}css/responsive.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="themeblvd_colors-css" href="{{STATIC_URL}}css/colors.min.css" type="text/css" media="all"> 
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='themeblvd_ie-css'  href='http://www.vipgymclub.com.ua/wp-content/themes/akita/assets/css/ie.css?ver=1.1' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="appointments-css" href="{{STATIC_URL}}css/front.css" type="text/css" media="all">
+<link href="{{STATIC_URL}}css/css.css" rel="stylesheet" type="text/css">
+<link href="{{STATIC_URL}}css/css1.css" rel="stylesheet" type="text/css">
+<link href="{{STATIC_URL}}css/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/css4.css">
+<link rel="stylesheet" media="print" href="{{STATIC_URL}}css/print.css" type="text/css">
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="{{STATIC_URL}}css/style1.css">
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="{{STATIC_URL}}css/ubermenu.css">
+
+<link rel="stylesheet" id="themeblvd_colors-css" href="{{STATIC_URL}}css/custom.css" type="text/css" media="all"> 
+
+{% endblock css %}
+
+{% block js %}
+{#{{ block.super }}#}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/html5lightbox.js"></script>
+
+</script>
+{% endblock js %}
+
+{% block pagecontent %}
+{% section_header 'Видеогаллерея' %}
+<div class="container-custom-post">
+
+    <div  class="entry-content">
+        <div class="">
+
+
+            <div class="clear"></div>
+        </div>
+        <div id="container">
+
+            <ul class="inline">
+                {% for video in object_list %}
+                <li class="col-md-5">
+
+
+                    <h4><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></h4>
+
+
+
+                    <div class="">
+                        <a href="{{ video.embed_url }}" class="html5lightbox" data-width="1024" data-height="768" title="{{ video.title }}">
+                            <img src="{{ video.thumb_url }}" alt="{{ video.title }}" class="thumbnail"/>
+                        </a>
+                    </div>
+
+
+                    {{ video.excerpt_html|safe}}
+
+
+
+
+
+
+
+                    
+                </li>
+                {% endfor %}
+            </ul>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock pagecontent %}

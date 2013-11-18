@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     # url(r'^/videogallery/?', ListView.as_view(model=Video),
         # name='videogallery_list'),
     url(r'^/videogallery/?', 'videogallery.views.video_list', 
-        name='videogallery_list'),
+        name='videogallery_video_list'),
    
     url(r'^/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/?$', 
             DateDetailView.as_view(**video_view_params),
