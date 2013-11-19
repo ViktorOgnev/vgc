@@ -43,7 +43,7 @@ class Video(models.Model):
     def save(self, force_insert=False, force_update=False):
         splitted_url = self.link.split("/")
         youtube_video_id = splitted_url[-1]
-        self.thumb_url = YOUTUBE_IMAGE_URL + youtube_video_id + "/default.jpg"
+        self.thumb_url = YOUTUBE_IMAGE_URL + youtube_video_id + "/hqdefault.jpg"
         
         
         self.embed_url = "http://www.youtube.com/embed/" + youtube_video_id

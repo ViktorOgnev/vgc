@@ -30,6 +30,11 @@ ol.inline > li {
     top: 14px;
 }
 .thumbnail{
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
+  margin-right: 100px;
+}
+
+.video-list-item {
+    height: 400px;
 }

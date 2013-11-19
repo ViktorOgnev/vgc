@@ -15,5 +15,6 @@ nppBackup/
 *.gz
 *.db
 *.jpg
+*.jpeg
 *.psd
 private_settings.py

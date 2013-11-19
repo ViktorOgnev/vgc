@@ -26,6 +26,7 @@
 
 <link rel="stylesheet" type="text/css" media="screen" href="{{STATIC_URL}}css/ubermenu.css">
 
+<link rel="stylesheet" id="themeblvd_colors-css" href="{{STATIC_URL}}css/bootstrap.css" type="text/css" media="all"> 
 <link rel="stylesheet" id="themeblvd_colors-css" href="{{STATIC_URL}}css/custom.css" type="text/css" media="all"> 
 
 {% endblock css %}
@@ -50,9 +51,9 @@
         </div>
         <div id="container">
 
-            <ul class="inline">
+            <ul class="inline" >
                 {% for video in object_list %}
-                <li class="col-md-5">
+                <li class="col-md-4 video-list-item">
 
 
                     <h4><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></h4>
@@ -66,7 +67,7 @@
                     </div>
 
 
-                    {{ video.excerpt_html|safe}}
+                    <p>{{ video.excerpt}}</p>
 
 
 
@@ -85,5 +86,7 @@
         </div>
     </div>
 </div>
-
+<script>
+    
+</script>
 {% endblock pagecontent %}
