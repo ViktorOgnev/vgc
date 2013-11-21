@@ -32,9 +32,59 @@ ol.inline > li {
 .thumbnail{
   max-width: 300px;
   height: auto;
-  margin-right: 100px;
+  
 }
 
-.video-list-item {
+.list-item {
     height: 400px;
+}
+
+.bio img {
+  max-width:100px;
+  height:auto;
+}
+.box-side-nav{
+  margin-left: 0;
+}
+
+#promotion-buttons-vertical{
+  margin-left: 0;
+}
+#carousel{
+  padding-right: 0;
+}
+
+.nav-tabs>li>a {
+  color: #fff;
+  
+  font-size: 14px;
+  background-color: black;
+  border-bottom: #f1c40f;
+
+}
+.nav-tabs>li>a:hover{
+  background-color: #f1c40f;
+
+}
+
+#tabs{
+  margin-top: 30px;
+}
+#tabcontrols{
+  margin-left:0px;
+  padding-left: 0px;
+}
+
+body{
+  background:#7d7e7d;
+  background:-moz-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%);
+  background:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #7d7e7d), color-stop(100%, #0e0e0e));
+  background:-webkit-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%);
+  background:-o-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%);
+  background:-ms-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%);
+  background:radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 100%)
+}
+
+.box-side-nav{
+  margin-top: 30px;
 }

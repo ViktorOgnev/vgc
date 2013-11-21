@@ -51,15 +51,13 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # third party
+    
     
     'grappelli',
     'filebrowser',
     'tinymce',
-    
     'south',
-    
-    # project specific
+        
     'core',
     'home',
     'videogallery',
@@ -68,6 +66,7 @@ INSTALLED_APPS = (
     'mailit',
     'personnel',
     
+    'compressor',    
     
 )
 
@@ -167,12 +166,18 @@ STATIC_ROOT = path('static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = path('media')
 
+COMPRESS_ENABLED = False
+STATIC_DEPS = True
 
-# STATICFILES_DIRS = (
-    # path('static'), #store site-specific media here.
-    # )
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # other finders..
+    'compressor.finders.CompressorFinder',
+)
 TEMPLATE_DIRS = (
-    path('templates'),)
+    path('templates'),
+)
 
 # User Image and file settings 
 IMG_UPLD_DIR = 'uploaded_images'

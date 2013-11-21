@@ -1,6 +1,9 @@
 {% extends "core/main.html" %}
 
 {% load core_tags %}
+{% load compress %}
+
+{% compress css %}
 {% block css %}
 
 <link rel="stylesheet" id="themeblvd-css" href="{{STATIC_URL}}css/themeblvd.css" type="text/css" media="all">
@@ -30,7 +33,9 @@
 <link rel="stylesheet" id="themeblvd_colors-css" href="{{STATIC_URL}}css/custom.css" type="text/css" media="all"> 
 
 {% endblock css %}
+{% endcompress %}
 
+{% compress js %}
 {% block js %}
 {#{{ block.super }}#}
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -38,6 +43,7 @@
 
 </script>
 {% endblock js %}
+{% endcompress %}
 
 {% block pagecontent %}
 {% section_header 'Видеогаллерея' %}
@@ -53,7 +59,7 @@
 
             <ul class="inline" >
                 {% for video in object_list %}
-                <li class="col-md-4 video-list-item">
+                <li class="col-md-4 list-item">
 
 
                     <h4><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></h4>

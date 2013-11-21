@@ -4,7 +4,7 @@ from .models import Employee, Specialisation
 
 class EmployeeAdmin(admin.ModelAdmin):
 
-    fields = ('name', 'slug',  'image', 'image_tag', 'bio', 'specialisation')
+    fields = ('name', 'slug', 'position', 'image', 'image_tag', 'bio', 'specialisation')
     filter_horizontal = ['specialisation']
     prepopulated_fields = {'slug': ['name']}
     field_options = {'classes': ['collapse', 'extrapretty'], }

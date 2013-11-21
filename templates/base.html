@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load compress %}
 
 <html lang="en-US" class="csstransforms csstransforms3d csstransitions js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js no-touch wf-leaguegothic-n4-active wf-fontawesome-n4-inactive wf-active" style="">
     <head>
@@ -12,19 +13,8 @@
         
         
         <meta name="description" content="VIP GYM CLUB - то место где вы сможете стать сильнее и здоровеее. Бодибилдинг, фитнесс, бассейн, тренеры, массаж, йога.">
-        
+        {% compress css %}
         {% block css %}
-      <!--  <link rel="alternate" type="application/rss+xml" title="VIP GYM CLUB » Feed" href="http://www.vipgymclub.com.ua/feed/">
-         <link rel="stylesheet" id="ai1ec_stytle-css" href="{{STATIC_URL}}css/saved_resource.css" type="text/css" media="all">
-       <link rel="stylesheet" id="frm-forms0-css" href="{{STATIC_URL}}css/formidablepro.css" type="text/css" media="all">
-       <link rel="stylesheet" id="veriteco_css-css" href="{{STATIC_URL}}css/timeline.css" type="text/css" media="all">
-       <link rel="stylesheet" id="veriteco_css_custom-css" href="{{STATIC_URL}}css/timeline_custom.css" type="text/css" media="all">
-       <link rel="stylesheet" id="wp-echo-css" href="{{STATIC_URL}}css/wp-echo.css" type="text/css" media="all">
-       <link rel="stylesheet" id="jquery-combobox-css" href="{{STATIC_URL}}css/style.css" type="text/css" media="all"> 
-       <link rel="stylesheet" id="social-widget-css" href="{{STATIC_URL}}css/social_widget.css" type="text/css" media="all">
-       <link rel="stylesheet" id="dcwss-css" href="{{STATIC_URL}}css/dcwss.css" type="text/css" media="all"> 
-       <link rel="stylesheet" id="prettyPhoto-css" href="{{STATIC_URL}}css/prettyPhoto.css" type="text/css" media="all">
-       <link rel="stylesheet" id="themeblvd_plugins-css" href="{{STATIC_URL}}css/plugins.css" type="text/css" media="all">-->
        <link rel="stylesheet" id="themeblvd-css" href="{{STATIC_URL}}css/themeblvd.css" type="text/css" media="all">
        <link rel="stylesheet" id="ubermenu-basic-css" href="{{STATIC_URL}}css/basic.css" type="text/css" media="all">
        <link rel="stylesheet" id="ubermenu-grey-white-css" href="{{STATIC_URL}}css/blackwhite.css" type="text/css" media="all">
@@ -36,10 +26,10 @@
         <!--[if lt IE 9]>
             <link rel='stylesheet' id='themeblvd_ie-css'  href='http://www.vipgymclub.com.ua/wp-content/themes/akita/assets/css/ie.css?ver=1.1' type='text/css' media='all' />
         <![endif]-->
-        <link rel="stylesheet" id="appointments-css" href="{{STATIC_URL}}css/front.css" type="text/css" media="all">
-        <link href="{{STATIC_URL}}css/css.css" rel="stylesheet" type="text/css">
-        <link href="{{STATIC_URL}}css/css1.css" rel="stylesheet" type="text/css">
-        <link href="{{STATIC_URL}}css/colorbox.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/css.css" >
+        <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/css1.css"> 
+        <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/colorbox.css">
         <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/css4.css">
         <link rel="stylesheet" media="print" href="{{STATIC_URL}}css/print.css" type="text/css">
         <link rel="stylesheet" type="text/css" media="screen" href="{{STATIC_URL}}css/tabber.css">
@@ -68,18 +58,23 @@
             }
         </style>
         {% endblock css %}
-        
+        {% endcompress %}
+
+        {#{% compress js %} #}
         {% block js %}
+            <script type="text/javascript" charset="utf-8"  src="{{STATIC_URL}}js/jquery1-10-2.min.js"></script>
+            <script type="text/javascript" charset="utf-8"  src="{{STATIC_URL}}js/jqueryui-1-10-3.min.js"></script>
             <!--[if lt IE 9]>
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
             <![endif]-->
-            <script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+            <script type="text/javascript">/*document.write('<style type="text/css">.tabber{display:none;}*/<\/style>');</script>
             <script src="{{STATIC_URL}}js/jquery.colorbox.js"></script>
-            <script type="text/javascript" charset="utf-8"  src="{{STATIC_URL}}js/common_frontend.js"></script>
-            <script type="text/javascript" charset="utf-8"  src="{{STATIC_URL}}js/require_jquery.js"></script>
-            <!-- <script type="text/javascript" charset="utf-8"  src="{{STATIC_URL}}js/jquery_lib.js"></script> -->
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            
+            
+            
+            
         {% endblock js %}
+        {#{% endcompress %} #}
         <meta property="og:type" content="article">
         <meta property="og:title" content="Home">
         <meta property="og:url" content="http://www.vipgymclub.com.ua/">
@@ -135,7 +130,7 @@
                                     </li>
                                     <li class="header-social">
                                         <div>
-                                            <div class="socialmedia-buttons smw_right"><a href="https://www.facebook.com/vipgymclub" rel="nofollow" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/facebook.png" alt="Follow Us on Facebook" title="Follow Us on Facebook" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a><a href="https://twitter.com/vipgymclub" rel="nofollow" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/twitter.png" alt="Follow Us on Twitter" title="Follow Us on Twitter" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a><a href="https://plus.google.com/105914446067460306811/posts" rel="publisher" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/googleplus.png" alt="Follow Us on Google+" title="Follow Us on Google+" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a><a href="http://pinterest.com/vipgymclub" rel="nofollow" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/pinterest.png" alt="Follow Us on Pinterest" title="Follow Us on Pinterest" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a><a href="http://www.youtube.com/channel/UCWHk72V0pGWs6kt2zRQiXKg" rel="nofollow" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/youtube.png" alt="Follow Us on YouTube" title="Follow Us on YouTube" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a></div>
+                                            <div class="socialmedia-buttons smw_right"><a href="https://www.facebook.com/vipgymclub" rel="nofollow" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/facebook.png" alt="Follow Us on Facebook" title="Follow Us on Facebook" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a><a href="https://twitter.com/vipgymclub" rel="nofollow" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/twitter.png" alt="Follow Us on Twitter" title="Follow Us on Twitter" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a><a href="https://plus.google.com//posts" rel="publisher" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/googleplus.png" alt="Follow Us on Google+" title="Follow Us on Google+" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a><a href="http://pinterest.com/vipgymclub" rel="nofollow" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/pinterest.png" alt="Follow Us on Pinterest" title="Follow Us on Pinterest" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a><a href="http://www.youtube.com/channel/UCWHk72V0pGWs6kt2zRQiXKg" rel="nofollow" target="_blank"><img width="32" height="32" src="{{STATIC_URL}}img/youtube.png" alt="Follow Us on YouTube" title="Follow Us on YouTube" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade"></a></div>
                                         </div>
                                     </li>
                                     <li class="header-closest-gym">
@@ -265,23 +260,25 @@
                 <div></div>
             </div>
         </div>
+        
+        
         {% block jsbottom %}
-            <!--[if IE 9 ]> 
-            <script type="text/javascript" src="/wp-content/themes/akita-child/assets/js/placeholder-ie.js"></script>
-            <![endif]-->
+            
             <script type="text/javascript" src="{{STATIC_URL}}js/js.js"></script><script src="{{STATIC_URL}}js/main(1).js" type="text/javascript"></script>
-            <script type="text/javascript">
-                /* <![CDATA[ */
-                var uberMenuSettings = {"speed":"300","trigger":"hoverIntent","orientation":"horizontal","transition":"slide","hoverInterval":"20","hoverTimeout":"400","removeConflicts":"on","autoAlign":"off","noconflict":"off","fullWidthSubs":"on","androidClick":"off","iOScloseButton":"off","loadGoogleMaps":"on","repositionOnLoad":"on"};
-                /* ]]> */
-            </script>
-            <script type="text/javascript">
-                /* <![CDATA[ */
-                timely.define( 'ai1ec_calendar', {"export_url":"webcal:\/\/www.vipgym.com\/?plugin=all-in-one-event-calendar&controller=ai1ec_exporter_controller&action=export_events&cb=1162333254","fonts":[{"name":"League Gothic","url":"http:\/\/www.vipgym.com\/wp-content\/themes-ai1ec\/vortex\/font_css\/font-league-gothic.css"},{"name":"fontawesome","url":"http:\/\/www.vipgym.com\/wp-content\/themes-ai1ec\/vortex\/font_css\/font-awesome.css"}]} );
-                /* ]]> */
-            </script>
             <script type="text/javascript" src="{{STATIC_URL}}js/script5.js"></script>
-            <script>
+            <script type="text/javascript" src="{{STATIC_URL}}js/custom.js"></script>
+
+                         
+        {% endblock jsbottom %}
+        
+
+        {% compress js inline%}
+            <script type="text/javascript">
+                /* <![CDATA[ */
+                var uberMenuSettings = {"speed":"300","trigger":"hoverIntent","orientation":"horizontal","transition":"slide","hoverInterval":"20","hoverTimeout":"400","removeConflicts":"on","autoAlign":"off","noconflict":"off","fullWidthSubs":"on","androidClick":"off","iOScloseButton":"off","loadGoogleMaps":"off","repositionOnLoad":"on"};
+                /* ]]> */
+            </script>
+             <script>
                 jQuery( window ).load(function() {
                     jQuery.getScript('//platform.twitter.com/widgets.js');
                     jQuery.getScript('//connect.facebook.net/en_US/all.js#xfbml=1');
@@ -292,8 +289,7 @@
                 });
                 
             </script>
-            <script type="text/javascript" src="{{STATIC_URL}}js/nr-100.js" gapi_processed="true"></script>
-            <script type="text/javascript" src="{{STATIC_URL}}js/custom.js"></script>
-        {% endblock jsbottom %}
+        {% endcompress %}
+
     </body>
 </html>

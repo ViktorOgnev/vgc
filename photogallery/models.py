@@ -7,7 +7,8 @@ from django.utils.html import format_html
 from django.utils.translation import ugettext_lazy as _
 
 from markdown2 import markdown
-from utils.aux_utils import get_image_path, produce_resized_image, transliterate, \
+from tinymce.models import HTMLField
+from core.aux_utils import get_image_path, produce_resized_image, transliterate, \
     space_to_underscore
 from vgc.settings import GLRY_THUMB_SIZE, GLRY_ZOOM_IN_SIZE, MEDIA_URL, IMG_UPLD_DIR
 from core.models import Location

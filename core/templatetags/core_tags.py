@@ -268,10 +268,11 @@ class IAllObjects(template.Node):
 
 
 @register.inclusion_tag("tags/section_header.html")
-def section_header(header_text):
+def section_header(*args):
     """
     Usage: {% section_header header_text %}
     """
+    header_text = ' '.join([arg for arg in args] )
     return {'header_text': header_text}
 
 

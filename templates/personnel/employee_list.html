@@ -60,13 +60,22 @@
                     <ul class="inline">
                         {% for trainer in spec.trainers %}
 
-                        <li>
+                        <li class="list-item">
                             <ul class="inline">
-                                <li><img src="{{trainer.image.url}}" alt="" style="max-height:100px;width:auto;"></li>
+                                <li>
+                                    <a href="{% url 'personnel_employee_detail' slug=trainer.slug %}">
+                                        <img src="{{trainer.image.url}}" class="thumbnail">
+                                    </a>
+
+                                </li>
                                 <br/>
-                                <li><a href="{{ trainer.get_absolute_url }}">{{trainer.name}}</a></li>
+                                <li>
+                                    <a href="{% url 'personnel_employee_detail' slug=trainer.slug %}">
+                                        {{trainer.name}}
+                                    </a>
+                                </li>
                                 <br/>
-                                <li>{{trainer.bio}}</li>
+                                <li>{{trainer.position}}</li>
                             </ul>
                         </li>
 

@@ -1,7 +1,10 @@
 from django.db import models
+
 from django.utils.translation import ugettext_lazy as _
 from django.utils.text import slugify
 from django.utils.html import format_html
+
+from tinymce.models import HTMLField
 
 from utils.aux_utils import get_image_path
 from utils.storage import OverwriteStorage
@@ -49,12 +52,17 @@ class Specialisation(PersonnelBase):
 
 class Employee(PersonnelBase):
 
-    bio = models.TextField(blank=True, verbose_name=_("Biography"))
+    bio = HTMLField(blank=True, null=True, verbose_name=_("Biography"),
+                    help_text="""You can use HTML markup - be
+                    careful!""")
     specialisation = models.ManyToManyField(Specialisation)
+    position = models.CharField(blank=True, null=True, max_length=255, 
+                                verbose_name="Position")
 
     class Meta:
         verbose_name = _("Employee")
         verbose_name_plural = _("Employees")
+
 
 # post_delete.connect(cache_evict, sender=Employee)
 # post_save.connect(cache_update, sender=Employee)
