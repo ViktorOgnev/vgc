@@ -75,7 +75,7 @@ ol.inline > li {
   padding-left: 0px;
 }
 
-body{
+/* body{
   background:#7d7e7d;
   background:-moz-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%);
   background:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #7d7e7d), color-stop(100%, #0e0e0e));
@@ -83,8 +83,16 @@ body{
   background:-o-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%);
   background:-ms-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%);
   background:radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 100%)
-}
+} */
 
 .box-side-nav{
   margin-top: 30px;
+}
+
+.slider-item{
+  margin-left: 0;
+  padding-left: 0;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }

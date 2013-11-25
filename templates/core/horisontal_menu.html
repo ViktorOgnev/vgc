@@ -39,6 +39,16 @@
                                 </li>
                                 <li id="menu-item-328" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
                                     <ul class="sub-menu sub-menu-2">
+                                        {#<!-- Add template caching here!!! -->#}
+                                        
+                                        {% for item in menu_about_left %}
+                                            <li id="menu-item-1374" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2">
+                                                <a href="{% url 'core_entry_detail' slug=item.content__slug %}">
+                                                    <span class="wpmega-link-title">{{ item.title }}</span>
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                        
                                         <li id="menu-item-1374" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2">
                                             <a href="http://www.vipgymclub.com.ua/why-vip-gym/">
                                                 <span class="wpmega-link-title">Почему VIP GYM CLUB</span>
@@ -70,14 +80,18 @@
                                 </li>
                                 <li id="menu-item-304" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
                                     <ul class="sub-menu sub-menu-2">
-                                        <li id="menu-item-1405" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
-                                            <a href="http://www.vipgymclub.com.ua/strength-with-knowledge/fitness-tools/">
-                                                <span class="wpmega-link-title">Фитнесс оборудование</span>
+                                        {% for item in menu_about_right %}
+
+                                        <li id="menu-item-about-{{forloop.counter}}" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
+                                            <a href="{% url 'core_entry_detail' slug=item.content__slug %}">
+                                                <span class="wpmega-link-title">{{ item.title }}</span>
                                                 <span class="wpmega-item-description">
-                                                    Отставайтесь всегда на фолне хорошей формы.
+                                                    {{ item.short_decsr }}
                                                 </span>
                                             </a>
                                         </li>
+                                        {% endfor %}
+
                                         <li id="menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2 ss-nav-menu-highlight ss-nav-menu-with-desc">
                                             <a href="http://www.vipgymclub.com.ua/why-vip-gym/programs/">
                                                 <span class="wpmega-link-title">Наши программы</span>

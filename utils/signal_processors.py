@@ -1,5 +1,9 @@
 from utils.aux_utils import produce_resized_image, transliterate
-from tradenplay.settings import CATEGORY_BANNER_SIZE, THUMBNAIL_SIZE
+from django.conf import settings
+
+
+CATEGORY_BANNER_SIZE = settings.BANNER_SIZE
+THUMBNAIL_SIZE = settings.THUMBNAIL_SIZE
 
 
 def add_m2m_connections(sender, **kwargs):
@@ -73,6 +77,6 @@ def create_category_banner(sender, **kwargs):
     if instance.image and not instance.banner:
         newname = transliterate(instance.name[0:20])
         simple_uploaded_file = produce_resized_image(
-            instance.image, CATEGORY_BANNER_SIZE)
+            instance.image, BANNER_SIZE)
         instance.banner.save(
             'banner' + newname + '.png', simple_uploaded_file, save=True)

@@ -1,46 +1,43 @@
 <div id="carousel" class="carousel slide col-sm-12 col-md-9 col-lg-9" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
+    <!-- Indicators -->
+    {% for slide in slides %}
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="{{forloop.counter0}}" {% if forloop.counter0 == 0 %} class="active"{% endif %}></li>
+        
+    </ol>
+    {% endfor %}
+    <!-- Wrapper for slides -->
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="http://lorempixel.com/g/800/290/" alt="Image1">
-                <div class="carousel-caption">
-                    <p class="text-warning">Some image1 text</p>
-                </div>
+    <div class="carousel-inner">
+        {%comment%}{% for slide in slides %}
+        <div class="slider-item item {% if forloop.counter0 == 0 %} active {% endif %}">
+            <img src="{{slide.image_link}}" alt="{{slide.name}}">
+            <div class="carousel-caption">
+                {{slide.html|safe}}
             </div>
-            <div class="item">
-                <img src="http://lorempixel.com/g/800/290/" alt="Image2">
-                <div class="carousel-caption">
-                    <p class="text-warning">Some image2 text</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="http://lorempixel.com/g/800/290/" alt="Image3">
-                <div class="carousel-caption">
-                    <p class="text-warning">Some image3 text</p>
-                </div>
-            </div>
-
         </div>
+        
+        {% endfor %}{%endcomment%}
+        <div class="item active">
+            <img src="http://lorempixel.com/g/880/320/" alt="Image2">
+            <div class="carousel-caption">
+                <p class="text-warning">Some image2 text</p>
+            </div>
+        </div>
+    </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
-    <div class="box-side-nav">
-        <ul id="promotion-buttons-vertical" class="pbv col-lg-3 col-md-3 col-sm-12 col-xs-12 pull-right">
-            <li class="left"><a class="box-side-link" href="http://www.vipgymclub.com.ua/locate-a-gym/?echo_flag=join">Присоединиться<br>сегодня</a></li>
-            <li class="center"><a class="box-side-link" href="http://www.vipgymclub.com.ua/locate-a-gym/?echo_flag=vip">ПРОБНЫЙ VIP<br> ВХОД</a></li>
-            <li class="right"><a class="box-side-link" href="http://www.vipgymclub.com.ua/locate-a-gym/?echo_flag=class">ПРОБНОЕ <br>ЗАНЯТИЕ</a></li>
-        </ul>
-    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<div class="box-side-nav">
+    <ul id="promotion-buttons-vertical" class="pbv col-lg-3 col-md-3 col-sm-12 col-xs-12 pull-right">
+        <li class="left"><a class="box-side-link" href="http://www.vipgymclub.com.ua/locate-a-gym/?echo_flag=join">Присоединиться<br>сегодня</a></li>
+        <li class="center"><a class="box-side-link" href="http://www.vipgymclub.com.ua/locate-a-gym/?echo_flag=vip">ПРОБНЫЙ VIP<br> ВХОД</a></li>
+        <li class="right"><a class="box-side-link" href="http://www.vipgymclub.com.ua/locate-a-gym/?echo_flag=class">ПРОБНОЕ <br>ЗАНЯТИЕ</a></li>
+    </ul>
+</div>

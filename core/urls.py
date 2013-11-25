@@ -2,6 +2,7 @@ from django.conf.urls import patterns, include, url
 from django.views.generic import dates
 from django.views.generic.list import ListView
 from django.views.generic.base import TemplateView
+
 # from tagging.models import Tag
 # from tagging.views import tagged_object_list
 from .views import EntryList
@@ -13,7 +14,7 @@ urlpatterns = patterns('',
     
     # Entry URLs
     url(r'^/?$', TemplateView.as_view(template_name="core/home_page.html"), name="core_home"),
-    
+    url(r'(?P<slug>[-\w]+)/?$', 'core.views.entry_detail', name="core_entry_detail")
 
 
     # url(r'^/?$',

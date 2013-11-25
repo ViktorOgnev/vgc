@@ -28,7 +28,7 @@ SECRET_KEY = SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 HTML_MINIFY = True
 
@@ -65,7 +65,8 @@ INSTALLED_APPS = (
     'contacts',
     'mailit',
     'personnel',
-    
+    'homepage',
+    'menu_control',
     'compressor',    
     
 )
@@ -77,6 +78,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'utils.middleware.LoginRequiredMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -90,6 +92,13 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'django.core.context_processors.request',
     'django.contrib.messages.context_processors.messages',
+    'utils.context_processors.menu_variables'
+)
+TEMPLATE_LOADERS = (
+    ('django.template.loaders.cached.Loader', (
+        'django.template.loaders.filesystem.Loader',
+        'django.template.loaders.app_directories.Loader',
+    )),
 )
 
 # debug_toolbar settings
@@ -178,6 +187,13 @@ STATICFILES_FINDERS = (
 TEMPLATE_DIRS = (
     path('templates'),
 )
+
+# LOGIN_URL = '/login/'
+ 
+# LOGIN_EXEMPT_URLS = (
+#  r'^about\.html$',
+#  r'^legal/', # allow any URL under /legal/*
+# ) 
 
 # User Image and file settings 
 IMG_UPLD_DIR = 'uploaded_images'
